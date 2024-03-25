@@ -1,27 +1,171 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #556b2f;
-    padding: 0;
-    margin: 0;
-}
-
-section {
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 100vh;
-    color: aliceblue;
-}
-
-h1 {
-    margin: auto;
-}
-
-.hidden {
-    opacity: 0;
-    transition: all 1s;
-}
-
-.show {
-    opacity: 1;
-}
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #556b2f;
+        padding: 0;
+        margin: 0;
+    }
+    
+    section {
+        display: grid;
+        place-items: center;
+        vertical-align: top;
+        min-height: 50vh;
+        height: auto;
+        color: aliceblue;
+        width: 100%;
+    }
+    
+    .RoleDescription {
+        background-color: #fff;
+        color: black;
+        min-height: 50vh;
+        padding-top: 50px;
+        width: 100%;
+    }
+    
+    h1 {
+        font-weight: 400;
+        font-size: 40px;
+    }
+    
+    h1,
+    h2 {
+        margin: 20px;
+        text-align: center;
+        vertical-align: top;
+        font-weight: 400;
+    }
+    
+    .hidden {
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(5px);
+        transform: translateX(-100%);
+    }
+    
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+    
+    .HeaderPortfolio {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 50px;
+        z-index: 1000;
+        /* Ensures the tabs appear above other content */
+        background-color: #fff;
+        opacity: 0.9;
+        box-shadow: 5px #f3f3f3;
+    }
+    
+    .tabs-container {
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 50px;
+        z-index: 1000;
+        /* Ensures the tabs appear above other content */
+        background-color: #fff;
+        opacity: 0.9;
+        box-shadow: 5px #f3f3f3;
+    }
+    
+    .my-name {
+        display: grid;
+        padding: 10px 20px;
+        margin: 0 5px;
+        background-color: transparent;
+        cursor: pointer;
+        border-radius: 6px;
+        width: 20%;
+        color: #000;
+        font-weight: 700;
+        size: 16px;
+        -webkit-text-size-adjust: 100%;
+        --primary-dark: #022609;
+        --black: black;
+    }
+    
+    .tab {
+        padding: 10px 20px;
+        margin: 0 5px;
+        background-color: transparent;
+        cursor: pointer;
+        border-radius: 6px;
+        color: #556b2f;
+        font-weight: 400;
+    }
+    
+    .tab.active {
+        background-color: transparent;
+        border-bottom-color: transparent;
+        color: #556b2f;
+        font-weight: 400;
+    }
+    
+    .tab:hover {
+        background-color: transparent;
+    }
+    
+    .tab:not(.active):hover {
+        background-color: transparent;
+    }
+    
+    .tab:not(:last-child) {
+        border-right: none;
+    }
+    
+    .myRole {
+        -webkit-text-size-adjust: 100%;
+        --primary-dark: #022609;
+        --black: black;
+        --paragraph-gray: #687076;
+        --brand-color: #556b2f;
+        --light-gray: #fafafa;
+        --gray: #ecedee;
+        --primary-with-opacity: rgba(12, 214, 157, 0.1);
+        --white: white;
+        --dark-with-opacity: rgba(32, 44, 51, .5);
+        --dark-gray-50: rgba(32, 44, 51, .5);
+        --primary-black: #11181c;
+        --white-50: rgba(255, 255, 255, .5);
+        color: var(--primary-dark);
+        font-family: Inter Tight, sans-serif;
+        box-sizing: border-box;
+        margin: .67em 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+        background-image: radial-gradient(circle farthest-corner at 0% 50%, #000, var(--brand-color) 82%, #556b2f 103%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: 1.2em;
+        font-size: 60px;
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+    }
+    
+    .myroledescription {
+        color: #687076;
+        font-weight: 200;
+        font-size: 18px;
+    }
+    
+    .myimage {
+        align-self: auto;
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }

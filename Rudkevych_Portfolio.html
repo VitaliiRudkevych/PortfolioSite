@@ -7,21 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script defer src="app.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <title>Vitalii Rudkevych - Software Engineer</title>
 </head>
 
 <body>
-    <section class="hidden">
-        <h1>Vitalii Rudkevych</h1>
+    <div class="HeaderPortfolio">
+        <div class="my-name">Vitalii Rudkevych</div>
+        <div class="tabs-container">
+            <div class="tab active" data-target="AboutMe">About Me</div>
+            <div class="tab" data-target="Technologies">Technologies</div>
+            <div class="tab" data-target="Portfolio">Portfolio</div>
+            <div class="tab" data-target="ContactMe">Contact Me</div>
+        </div>
+    </div>
+    <section>
+        <div class="RoleDescription">
+            <h1 class="myRole">Software Engineer</h1>
+            <h2 class="myroledescription">Empowering Businesses Through Results-Driven Automation Solutions: Unleashing Innovation with Power Platform and RPA Expertise.</h2>
+        </div>
     </section>
     <section class="hidden">
+        <div id="AboutMe" class="hidden">
+            <h1>Vitalii Rudkevych</h1>
+            <h2>Results-oriented Power Platform and RPA Developer with a proven track record of 4 years in the industry. Specializing in UiPath, Power Platform, and VB.Net, I bring hands-on expertise in leading, designing, developing, and supporting RPA/Power
+                Platform Solutions. My experience spans both on-site collaboration within a team and delivering self-service solutions for companies across Europe, Canada, the US, and Ukraine. Committed to driving innovation and efficiency through Automation
+                and Power Platform.</h2>
+            <img class="myimage" src="Images/cv_photo.jpg">
+        </div>
+    </section>
+    <section class="hidden" id="Technologies">
         <h1>Technologies</h1>
     </section>
-    <section class="hidden">
+    <section class="hidden" id="Portfolio">
         <h1>Portfolio</h1>
     </section>
-    <section class="hidden ">
+    <section class="hidden" id="ContactMe">
         <h1>Contact Me</h1>
     </section>
 </body>
